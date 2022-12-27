@@ -1,0 +1,34 @@
+{
+    "files":[
+     {
+            "fileName":"houses",
+            "seed":"50",
+            "distribution":"normal",
+            "mu":"100",
+            "sigma":"50",
+            "totalpoints":"500",
+            "optimal clusters":"3",
+            "columns":{"lot size":            {"max":"1_000_000", "min":"5000",     "increment":"1"}, 
+                       "bathrooms":           {"max":"10",        "min":"1",        "increment":"1"},
+                       "square feet":         {"max":"20_000",    "min":"1_000",    "increment":"100"},
+                       "annual property tax": {"max":"10_000",    "min":"500",      "increment":"150"}
+                      },
+            "columns to cluster":["annual property tax", "square feet"]
+     },
+     {
+            "fileName":"cars",
+            "seed":"888",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"top speed":        {"max":"210",     "min":"120",    "increment":"5"},
+                       "cost new":         {"max":"250_000", "min":"20_000", "increment":"10"}, 
+                       "weight in pounds": {"max":"6000",    "min":"2500",   "increment":"20"}, 
+                       "miles per gallon": {"max":"55",      "min":"10",     "increment":".5"}
+                      },
+            "columns to cluster":["top speed", "cost new"]
+     }
+    ]
+}    
+
+
