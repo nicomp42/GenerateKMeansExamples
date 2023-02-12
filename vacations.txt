@@ -1,0 +1,11 @@
+Creating vacations.csv optimal clusters =  3
+makeitdirty = True
+seed = 444
+distribution = normal
+total points = 500
+Header row =  year,cost,miles driven,miles hiked,destination,who with,Target Centroid
+Columns to cluster: OrderedDict([('year', {'datatype': 'int', 'max': '2023', 'min': '1981', 'increment': '1'}), ('miles hiked', {'datatype': 'float', 'max': '50', 'min': '0', 'increment': '.5'})])
+Target clusters computed to be:
+OrderedDict([('year', 1999), ('miles hiked', 20)])
+OrderedDict([('year', 1990), ('miles hiked', 20)])
+OrderedDict([('year', 2005), ('miles hiked', 19)])

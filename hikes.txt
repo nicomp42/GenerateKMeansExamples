@@ -1,0 +1,11 @@
+Creating hikes.csv optimal clusters =  3
+makeitdirty = True
+seed = 456
+distribution = normal
+total points = 500
+Header row =  date of hike,cost,miles driven to and from hike,miles hiked,destination,who with,Target Centroid
+Columns to cluster: OrderedDict([('cost', {'datatype': 'float', 'max': '500', 'min': '0', 'increment': '1'}), ('miles driven to and from hike', {'datatype': 'int', 'max': '2000', 'min': '50', 'increment': '1'})])
+Target clusters computed to be:
+OrderedDict([('cost', 345), ('miles driven to and from hike', 1452)])
+OrderedDict([('cost', 337), ('miles driven to and from hike', 1297)])
+OrderedDict([('cost', 135), ('miles driven to and from hike', 747)])

@@ -1,0 +1,11 @@
+Creating carsDirtyData.csv optimal clusters =  3
+makeitdirty = True
+seed = 8880
+distribution = normal
+total points = 500
+Header row =  top speed,cost new,weight in pounds,miles per gallon,popular color,Target Centroid
+Columns to cluster: OrderedDict([('top speed', {'max': '210', 'min': '120', 'increment': '5'}), ('cost new', {'max': '250_000', 'min': '20_000', 'increment': '10'})])
+Target clusters computed to be:
+OrderedDict([('top speed', 189), ('cost new', 145563)])
+OrderedDict([('top speed', 179), ('cost new', 193725)])
+OrderedDict([('top speed', 174), ('cost new', 162919)])

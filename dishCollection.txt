@@ -1,0 +1,11 @@
+Creating dishCollection.csv optimal clusters =  3
+makeitdirty = True
+seed = 111
+distribution = normal
+total points = 500
+Header row =  diameter,cost,weight in pounds,age,composition,color,Target Centroid
+Columns to cluster: OrderedDict([('diameter', {'datatype': 'int', 'max': '24', 'min': '4', 'increment': '1'}), ('cost', {'datatype': 'float', 'max': '500', 'min': '1', 'increment': '.01'})])
+Target clusters computed to be:
+OrderedDict([('diameter', 11), ('cost', 276)])
+OrderedDict([('diameter', 15), ('cost', 214)])
+OrderedDict([('diameter', 14), ('cost', 328)])

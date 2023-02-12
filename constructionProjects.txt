@@ -1,0 +1,11 @@
+Creating constructionProjects.csv optimal clusters =  3
+makeitdirty = True
+seed = 678
+distribution = normal
+total points = 500
+Header row =  floors,date started,cost per square foot,years to complete,interest rate on financing,purpose,neighborhood,Target Centroid
+Columns to cluster: OrderedDict([('floors', {'datatype': 'int', 'max': '75', 'min': '1', 'increment': '1'}), ('cost per square foot', {'datatype': 'float', 'max': '50', 'min': '5', 'increment': '1'})])
+Target clusters computed to be:
+OrderedDict([('floors', 25), ('cost per square foot', 25)])
+OrderedDict([('floors', 18), ('cost per square foot', 25)])
+OrderedDict([('floors', 18), ('cost per square foot', 20)])

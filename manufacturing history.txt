@@ -1,0 +1,11 @@
+Creating manufacturing history.csv optimal clusters =  3
+makeitdirty = True
+seed = 458
+distribution = normal
+total points = 500
+Header row =  date manufactured,total cost,total items manufactured,percentage rejected,percentage returned,item,manufacturing plant,Target Centroid
+Columns to cluster: OrderedDict([('total cost', {'datatype': 'float', 'max': '500000', 'min': '1000', 'increment': '100'}), ('percentage rejected', {'datatype': 'float', 'max': '5', 'min': '0', 'increment': '.01'})])
+Target clusters computed to be:
+OrderedDict([('total cost', 153139), ('percentage rejected', 3)])
+OrderedDict([('total cost', 346127), ('percentage rejected', 1)])
+OrderedDict([('total cost', 162345), ('percentage rejected', 2)])

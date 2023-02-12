@@ -1,0 +1,25 @@
+{
+    "files":[
+
+     {
+            "fileName":"constructionProjects",
+            "makeitdirty":"true",
+            "seed":"678",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"floors":                           {"datatype": "int",   "max":"75",         "min":"1",      "increment":"1"},
+                       "date started":                     {"datatype": "date",  "max":"2023-12-31", "min":"2000-01-01",   "increment":"1"}, 
+                       "cost per square foot":             {"datatype": "float", "max":"50",         "min":"5",      "increment":"1"}, 
+                       "years to complete":                {"datatype": "int",   "max":"15",         "min":"1",      "increment":".5"}, 
+                       "interest rate on financing":       {"datatype": "float", "max":"8",          "min":"0",      "increment":".01"},
+                       "purpose":                          {"choosefromlist":["offices", "factory", "government", "hospital", "warehouse", "multi-purpose"]},
+                       "neighborhood":                     {"choosefromlist":["industrial", "residential", "rural", "mixed use", "unknown", "entertainment"]}
+                      },
+            "columns to cluster":["floors", "cost per square foot"]
+	 }
+
+    ]
+}    
+
+
