@@ -3,8 +3,7 @@
 1. Study the json file provided. There are numerous example datasets in there. </br>
 2. Edit the json file as needed.</br>
 3. Run the Jupyter Notebook and it will process the json file. A .txt file with meta data and two .csv files will be generated with the same name as the json file </br>
-4. Look in the .txt file for the centroids that were used to create the CSV file and also </br>
-the centroids that were computed when the data in the CSV file was K-Means processed. </br>
+4. Look in the .txt file for the centroids that were used to create the CSV file. </br>
 Look in the solutions CSV file for an extra column that defines the cluster for that row.</br>
 If you're giving this as an assignment, just give the CSV file and hold back the .txt file and the other CSV file with the solution column.
  </br>
