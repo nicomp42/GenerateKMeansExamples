@@ -1,0 +1,161 @@
+{
+    "files":[
+     {
+            "fileName":"houses",
+            "makeitdirty":"true",
+            "seed":"5",
+            "distribution":"normal",
+            "mu":"100",
+            "sigma":"50",
+            "totalpoints":"500",
+            "optimal clusters":"3",
+            "columns":{"lot size":            {"datatype":"int",   "max":"1_000_000", "min":"5000",     "increment":"1"}, 
+                       "bathrooms":           {"datatype":"int",   "max":"10",        "min":"1",        "increment":"1"},
+                       "square feet":         {"datatype":"int",   "max":"20_000",    "min":"1_000",    "increment":"100"},
+                       "annual property tax": {"datatype":"float", "max":"10_000",    "min":"500",      "increment":"150"},
+                       "neighborhood":        {"choosefromlist":["in crisis", "below average", "average", "above average", "exclusive"]}
+                      },
+            "columns to cluster":["annual property tax", "square feet"]
+     },
+     {
+            "fileName":"manufacturing history",
+            "makeitdirty":"true",
+            "seed":"458",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"date manufactured":                {"datatype": "date",  "max":"2023-01-01", "min":"1900-01-01", "increment":"1"},
+                       "total cost":                       {"datatype": "float", "max":"500000",     "min":"1000",       "increment":"100"}, 
+                       "total items manufactured":         {"datatype": "int",   "max":"20000",      "min":"1",          "increment":"1"}, 
+                       "percentage rejected":              {"datatype": "float", "max":"5",          "min":"0",          "increment":".01"},
+                       "percentage returned":              {"datatype": "float", "max":"5",          "min":"0",          "increment":".01"},
+                       "item":                             {"choosefromlist":["widget", "gadget", "frazmus", "thingamajig", "gizmo", "thingy", "tool", "unknown", "bobblehead"]},
+                       "manufacturing plant":              {"choosefromlist":["Cincinnati", "Kokomo", "Lexington", "Columbus", "Hillsdale", "Clifton", "Ludlow", "Venice"]}
+                      },
+            "columns to cluster":["total cost", "percentage rejected"]
+	 },
+     {
+            "fileName":"CarSales",
+            "makeitdirty":"true",
+            "seed":"459",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"date of sale":                    {"datatype": "date",  "max":"2023-01-01", "min":"1900-01-01", "increment":"1"},
+                       "sale price":                      {"datatype": "float", "max":"500000",     "min":"1000",       "increment":"100"}, 
+                       "sales tax":                       {"datatype": "float", "max":"15000",      "min":"0",          "increment":"100"}, 
+                       "total miles":                     {"datatype": "int",   "max":"50",         "min":"0",          "increment":"1"},
+                       "model":                           {"choosefromlist":["Camaro", "Corvette", "Cruz", "Impala", "Monte Carlo", "Volt", "Spark", "Cavalier", "Malibu"]},
+                       "dealership":                      {"choosefromlist":["Mikes Used Cars", "Brendas Car Sales", "Cars r Us", "Vehicles Of the World", "A1 Auto", "Pretty Good Sales", "Mike Murphy Car Lot", "Indiana Hoosiers Car Sales", "Sam Smith Auto", "Florida Car Sales", "Deer Park Auto", "Home Town Vehicles"]}
+                      },
+            "columns to cluster":["total miles", "sale price"]
+	 },
+     {
+            "fileName":"PowerToolCollection",
+            "makeitdirty":"true",
+            "seed":"409",
+            "distribution":"normal",
+            "optimal clusters":"4",
+            "totalpoints":"500",
+            "columns":{"date of purchase":                {"datatype": "date",  "max":"2023-01-01", "min":"2000-01-01", "increment":"1"},
+                       "cost":                            {"datatype": "float", "max":"500"   ,     "min":"0",          "increment":"10"}, 
+                       "estimated value":                 {"datatype": "float", "max":"15000",      "min":"0",          "increment":"100"}, 
+                       "hours of use":                    {"datatype": "int",   "max":"2000",       "min":"0",          "increment":"1"},
+                       "type":                            {"choosefromlist":["hand drill", "drill press", "circular saw", "table saw", "hand router", "planer", "joiner", "jig saw", "Miscellaneous", "air hammer", "hammer drill", "air compressor", "impact driver", "impact wrench", "nail gun", "chain saw", "miter saw"]},
+                       "manufacturer":                    {"choosefromlist":["Sears", "Black and Decker", "Craftsman", "DeWalt", "Kobalt", "Milwaukee", "K-Mart", "Harbor Freight", "Snap-On","Unknown", "Stanley", "Dremel", "Bosch", "Ryobi", "Makita", "Hitachi", "Porter-Cable"]}
+                      },
+            "columns to cluster":["cost", "hours of use"]
+	 },
+     {
+            "fileName":"BankDeposits",
+            "makeitdirty":"true",
+            "seed":"1000",
+            "distribution":"normal",
+            "optimal clusters":"4",
+            "totalpoints":"500",
+            "columns":{"date of deposit":                 {"datatype": "date",  "max":"2023-12-31", "min":"2023-01-31", "increment":"1"},
+                       "deposit amount":                  {"datatype": "float", "max":"11000",      "min":"5",          "increment":".01"}, 
+                       "transaction fee":                 {"datatype": "int",   "max":"10",         "min":"0",          "increment":"1"}, 
+                       "customer number":                 {"datatype": "int",   "max":"987654",     "min":"123456",     "increment":"1"},
+                       "account number":                  {"datatype": "int",   "max":"9876540000", "min":"1234560000", "increment":"1"},
+                       "type of funds deposited":         {"choosefromlist":["cash", "check", "bitcoin", "dogecoin","other crypto currency", "gold", "silver","wire transfer", "foreign currency", "unknown"]},
+                       "type of account":                 {"choosefromlist":["savings", "checking", "investment", "line of credit", "business"]}
+                      },
+            "columns to cluster":["deposit amount", "account number"]
+	 },
+     {
+			"comment":"https://www.youtube.com/watch?v=Z4Sje-kgvME",
+            "fileName":"KielLockCommercialTraffic",
+            "makeitdirty":"true",
+            "seed":"1001",
+            "distribution":"normal",
+            "optimal clusters":"4",
+            "totalpoints":"500",
+            "columns":{"date of transit":                 {"datatype": "date",  "max":"2022-12-31", "min":"2022-01-01", "increment":"1"},
+                       "total tonnage":                   {"datatype": "int",   "max":"400000",     "min":"200000",     "increment":"100"}, 
+                       "total crew":                      {"datatype": "int",   "max":"40",         "min":"10",         "increment":"1"}, 
+                       "total passage fees":              {"datatype": "float", "max":"9999",       "min":"0",          "increment":".50"}, 
+                       "customer number":                 {"datatype": "int",   "max":"987654",     "min":"123456",     "increment":"1"},
+                       "account number":                  {"datatype": "int",   "max":"9876540000", "min":"1234560000", "increment":"1"},
+                       "type of vessel":                  {"choosefromlist":["coal barge", "ore carrier", "oil barge", "grain barge", "container","other", "tug boat", "maintenance barge", "commercial passenger liner", "Supertanker", "Crane Vessel", "Naval Vessel"]},
+                       "direction of transit":            {"choosefromlist":["North", "South"]}
+                      },
+            "columns to cluster":["total tonnage", "total passage fees"]
+	 },
+     {
+			"comment":"https://www.youtube.com/@BrownvillesFoodPantryForDeer",
+            "fileName":"Brownville Food Pantry For Deer",
+            "makeitdirty":"true",
+            "seed":"1003",
+            "distribution":"normal",
+            "optimal clusters":"4",
+            "totalpoints":"500",
+            "columns":{"date of feeding":                       {"datatype": "date",  "max":"2023-02-27", "min":"2022-08-08", "increment":"1"},
+                       "total pounds of apples":                {"datatype": "int",   "max":"300",        "min":"0",          "increment":"1"}, 
+                       "total pounds of oats":                  {"datatype": "int",   "max":"1000",       "min":"0",          "increment":"1"}, 
+                       "total pounds of acorns":                {"datatype": "float", "max":"500",        "min":"0",          "increment":".50"}, 
+                       "ambient temperature at feeding":        {"datatype": "int",   "max":"20",         "min":"-20",        "increment":".50"}, 
+                       "total deer waiting to eat":             {"datatype": "int",   "max":"19",         "min":"0",          "increment":"1"},
+                       "predominant animal spotted at feeding": {"choosefromlist":["deer", "turkeys", "squirells", "foxes", "wolves", "birds", "moose", ""]}
+                      },
+            "columns to cluster":["total pounds of apples", "ambient temperature at feeding"]
+	 },
+     {
+            "fileName":"Popular Search Phrases by Date",
+            "makeitdirty":"true",
+            "seed":"1005",
+            "distribution":"normal",
+            "optimal clusters":"4",
+            "totalpoints":"500",
+            "columns":{"date":                                  {"datatype": "date",  "max":"2022-12-31", "min":"2022-01-01", "increment":"1"},
+                       "total searches":                        {"datatype": "int",   "max":"9999999",    "min":"100",        "increment":"1"}, 
+                       "cost per click":                        {"datatype": "float", "max":"50",         "min":"1",          "increment":".01"}, 
+                       "total clicks":                          {"datatype": "int",   "max":"8000000",    "min":"99",         "increment":".50"}, 
+                       "search phrase":                         {"choosefromlist":["cats", "cat picturs", "pictures of cats", "cat photos", "photos of cats", "cat pics" ,"cat pictures", "cat images", "images of cats", "cute kittens", "pics of kittens", "kitty cats", "kitty cat photos", "cat videos", "cat feding videos"]},
+                       "browser":                               {"choosefromlist":["Edge", "FireFox", "IE", "Chrome", "Opera", "Brave", "Duck Duck Go", "Unknown", "Netscape Navigator", "Safari", "Aloha" ,"Vivaldi"]}
+                      },
+            "columns to cluster":["total searches", "total clicks"]
+	 },
+     {
+			"comment":"",
+            "fileName":"Produce Deliveries",
+            "makeitdirty":"true",
+            "seed":"1001",
+            "distribution":"normal",
+            "optimal clusters":"4",
+            "totalpoints":"500",
+            "columns":{"date of delivery":                {"datatype": "date",  "max":"2022-12-31", "min":"2022-01-01", "increment":"1"},
+                       "total pounds":                    {"datatype": "int",   "max":"1000",       "min":"500",        "increment":"10"}, 
+                       "total packages":                  {"datatype": "int",   "max":"40",         "min":"1",          "increment":"1"}, 
+                       "wholesale price":                 {"datatype": "float", "max":"9999",       "min":"100",        "increment":".50"}, 
+                       "vendor number":                   {"datatype": "int",   "max":"987654",     "min":"123456",     "increment":"1"},
+                       "item":                            {"choosefromlist":["bananas", "grapes", "watermelons", "oranges", "strawberries", "grapefruits", "monkfruits", "guavas", "blueberries", "blackberries", "raspberries", "cantaloupes", "apples", "mangos", "avocados", "pinapples", "durians", "cherries", "olives", "kiwis", "peaches"]},
+                       "condition":                       {"choosefromlist":["fresh", "frozen", "dehydrated", "ruined"]}
+                      },
+            "columns to cluster":["total pounds", "wholesale price"]
+	 }
+
+    ]
+}    
+
+
