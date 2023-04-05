@@ -2,7 +2,6 @@
     "files":[
      {
             "fileName":"houses",
-            "makeitdirty":"true",
             "seed":"5",
             "distribution":"normal",
             "mu":"100",
@@ -17,6 +16,116 @@
                       },
             "columns to cluster":["annual property tax", "square feet"]
      },
+     {
+            "fileName":"cars",
+            "seed":"888",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"top speed":        {"max":"210",     "min":"120",    "increment":"5"},
+                       "cost new":         {"max":"250_000", "min":"20_000", "increment":"10"}, 
+                       "weight in pounds": {"max":"6000",    "min":"2500",   "increment":"20"}, 
+                       "miles per gallon": {"max":"55",      "min":"10",     "increment":".5"},
+                       "popular color":    {"choosefromlist":["red", "bright red", "sunburst red", "glowing red", "ultraviolet red"]}
+                      },
+            "columns to cluster":["top speed", "cost new"]
+     },
+     {
+            "fileName":"carsDirtyData",
+            "makeitdirty":"true",
+            "seed":"8880",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"top speed":        {"max":"210",     "min":"120",    "increment":"5"},
+                       "cost new":         {"max":"250_000", "min":"20_000", "increment":"10"}, 
+                       "weight in pounds": {"max":"6000",    "min":"2500",   "increment":"20"}, 
+                       "miles per gallon": {"max":"55",      "min":"10",     "increment":".5"},
+                       "popular color":    {"choosefromlist":["black", "red", "bright red", "sunburst red", "glowing red", "ultraviolet red"]}
+                      },
+            "columns to cluster":["top speed", "cost new"]
+     },
+     {
+            "fileName":"dishCollection",
+            "makeitdirty":"true",
+            "seed":"111",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"diameter":         {"datatype": "int",   "max":"24",      "min":"4",      "increment":"1"},
+                       "cost":             {"datatype": "float", "max":"500",     "min":"1",      "increment":".01"}, 
+                       "weight in pounds": {"datatype": "float", "max":"15",      "min":"1",      "increment":".5"}, 
+                       "age":              {"datatype": "int",   "max":"150",     "min":"0",      "increment":"1"},
+                       "composition":      {"choosefromlist":["ceramic", "porcelin", "wooden", "steel", "aluminium", "unknown"]},
+                       "color":            {"choosefromlist":["gray", "green", "red", "blue", "white", "slate", "multi", "unknown"]}
+                      },
+            "columns to cluster":["diameter", "cost"]
+     },
+     {
+            "fileName":"carpetInventory",
+            "makeitdirty":"true",
+            "seed":"222",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"diameter of roll":                 {"datatype": "int",   "max":"24",      "min":"4",      "increment":"1"},
+                       "cost per square yard":             {"datatype": "float", "max":"50",      "min":"5",      "increment":".50"}, 
+                       "weight in pounds per square yard": {"datatype": "float", "max":"15",      "min":"1",      "increment":".5"}, 
+                       "pad thickness":                    {"datatype": "int",   "max":"3",       "min":"0",      "increment":"1"},
+                       "material":                         {"choosefromlist":["nylon", "cotton", "rayon", "recycled materials", "polyester", "wool", "unknown"]},
+                       "color":                            {"choosefromlist":["gray", "green", "red", "blue", "white", "slate", "multi", "unknown", "plaid", "symmetric design", "pictoral", "yellow", "sand", "beige", "mud", "light brown", "purple"]}
+                      },
+            "columns to cluster":["diameter of roll", "cost per square yard"]
+	 }, 
+{
+            "fileName":"constructionProjects",
+            "makeitdirty":"true",
+            "seed":"678",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"floors":                           {"datatype": "int",   "max":"75",         "min":"1",      "increment":"1"},
+                       "date started":                     {"datatype": "date",  "max":"2023-12-31", "min":"2000-01-01",   "increment":"1"}, 
+                       "cost per square foot":             {"datatype": "float", "max":"50",         "min":"5",      "increment":"1"}, 
+                       "years to complete":                {"datatype": "int",   "max":"15",         "min":"1",      "increment":".5"}, 
+                       "interest rate on financing":       {"datatype": "float", "max":"8",          "min":"0",      "increment":".01"},
+                       "purpose":                          {"choosefromlist":["offices", "factory", "government", "hospital", "warehouse", "multi-purpose"]},
+                       "neighborhood":                     {"choosefromlist":["industrial", "residential", "rural", "mixed use", "unknown", "entertainment"]}
+                      },
+            "columns to cluster":["floors", "cost per square foot"]
+	 },
+     {
+            "fileName":"vacations",
+            "makeitdirty":"true",
+            "seed":"444",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"year":                             {"datatype": "int",   "max":"2023",    "min":"1981",   "increment":"1"},
+                       "cost":                             {"datatype": "float", "max":"5000",    "min":"500",    "increment":"1"}, 
+                       "miles driven":                     {"datatype": "int",   "max":"2000",    "min":"50",     "increment":"1"}, 
+                       "miles hiked":                      {"datatype": "float", "max":"50",      "min":"0",      "increment":".5"},
+                       "destination":                      {"choosefromlist":["Shipshewana", "Gatlinburg", "Ashville", "Pawhuska", "Kokomo", "multiple destinations"]},
+                       "who with":                         {"choosefromlist":["family", "alone", "hiking club", "school trip", "unknown"]}
+                      },
+            "columns to cluster":["year", "miles hiked"]
+	 },
+     {
+            "fileName":"hikes",
+            "makeitdirty":"true",
+            "seed":"456",
+            "distribution":"normal",
+            "optimal clusters":"3",
+            "totalpoints":"500",
+            "columns":{"date of hike":                     {"datatype": "date",  "max":"2023-01-01", "min":"2010-01-01", "increment":"1"},
+                       "cost":                             {"datatype": "float", "max":"500",        "min":"0",          "increment":"1"}, 
+                       "miles driven to and from hike":    {"datatype": "int",   "max":"2000",       "min":"50",         "increment":"1"}, 
+                       "miles hiked":                      {"datatype": "float", "max":"29",         "min":"0",          "increment":".5"},
+                       "destination":                      {"choosefromlist":["Shipshewana", "Gatlinburg", "Pokagon State Park", "Cincinnati Nature Center", "East Fork Lake State Park"]},
+                       "who with":                         {"choosefromlist":["friends", "alone", "hiking club", "school trip", "unknown"]}
+                      },
+            "columns to cluster":["cost", "miles driven to and from hike"]
+	 },
      {
             "fileName":"manufacturing history",
             "makeitdirty":"true",
@@ -118,7 +227,7 @@
                        "total deer waiting to eat":             {"datatype": "int",   "max":"19",         "min":"0",          "increment":"1"},
                        "predominant animal spotted at feeding": {"choosefromlist":["deer", "turkeys", "squirells", "foxes", "wolves", "birds", "moose", ""]}
                       },
-            "columns to cluster":["total pounds of apples", "ambient temperature at feeding"]
+            "columns to cluster":["total pounds of apples", "temperature"]
 	 },
      {
             "fileName":"Popular Search Phrases by Date",
